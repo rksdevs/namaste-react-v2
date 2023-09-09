@@ -1,0 +1,14 @@
+1. React elements are not HTML elements, but these are js objects
+2. When these react elements are rendered - they become html elements
+3. JSX - JSX is not HTML but HTML-like or XML-like syntax, which helps us to write react codes in a more readable manner
+4. JSX code is not pure JS code
+5. Before our code is sent to the browser, the bundler transpiles our code, so the JS engine can understand it
+6. JSX code is transpiled by Parcel using Babel library
+7. Babel library is a compiler or transpiler, which transpiles or compiles ECMAScript2015+ code to backward compatible JS
+8. Babel converts our JSX code to React.createElement which creates a JS object
+9. Almost everything in a react web site is a component - nav bar, search box, header, footer etc etc
+10. React components are of two types - Class based component (old way) and Functional Components (new way)
+11. React Functional components are nothing but a regular JS function.
+12. A function which returns some JSX code (otherwise a react element) is a react functional component. Naming Conventions - always start with Capitals
+13. Using curly braces allows us to execute any JS codes within our JSX code
+14. This might be used for cross site scripting attacks, but JSX takes care of this by sanitizing the scripts that are run inside JSX

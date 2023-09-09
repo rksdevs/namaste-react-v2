@@ -1,0 +1,15 @@
+1. There are 2 ways to export - Default export & Named export
+2. There can not be multiple default exports within one file, hence default export is used where there is only 1 variable which needs to be exported
+3. Named export can other wise help us exporting multiple variables within a single file hence is used where there are multiple exports needed.
+4. Event handlers in React - 54:57
+5. Filtering Data for the UI - starts at 57:00
+6. React is fast because it can do faster DOM manipulation, DOM manipulation is the challenge which every framework/library is trying to address
+7. Introduction to react hooks - 1:16:00 timestamp
+8. React hooks are normal JS functions which are provided by React. These are utility functions which enable us to use them for certain purposes. There are several such funtions otherwise knowns as Hooks. Like useState() & useEffect() are 2 most important and very commonly use hooks
+9. useState() hook is used to create State variables in react. State variables are like regular variables in JS but they have a certain state at a given time which can be changed when requried.
+10. whenever a state variable updates react re-renders the component
+11. How react works behind the screen timestamp:  1:45:19 (Reconciliation, virtual DOM, React Fiber)
+12. In React 16 - A new algorithm called React fiber was introduced which is resposible for DOM manipulation. Its a new way to find the difference and update the Actual DOM
+13. Virtual DOM - is a object like representation of the actual DOM
+14. Diff Algorithm - Differentiates the old Virtual DOM from the updated Virtual DOM and manipulates the Actual DOM on every render.
+15. React Fiber (Source Chat Gpt): The React Fiber algorithm (also known as React Fiber or simply Fiber) is a significant reimplementation of the React reconciliation algorithm. It was introduced in React version 16 to improve the performance and responsiveness of React applications, particularly in handling large and complex component trees. React Fiber, on the other hand, is an asynchronous and incremental reconciliation algorithm. It allows React to break down the reconciliation process into smaller units of work, or "fibers," that can be spread out over multiple frames, making it possible to avoid long, blocking operations. This approach enables React to prioritize and manage the work according to the urgency and importance of different updates.

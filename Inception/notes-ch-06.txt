@@ -1,0 +1,15 @@
+1. Architechtures Monolith & Microservices (1:25): Monolith - We have all the codes like API, UI, Auth, DB, written at one place, and when we want to test a component we need to build the entire project to check it. Microservices - We have separate codes bases for separate sections like API, UI, DB etc are separate microservices. This is called Sepration of Concerns it follows Single Responsibility Principles
+2. Two approaches how data is fetched from backend APIs (14:45): 
+    1st way --> Page loads > Make API call > wait for data > render the UI
+    2nd way --> page loads  > render ui > make api call > wait for data > rerender the UI
+3. In react we use 2nd way of fetching data and rendering UI. Because it is better and gives a better User Experience (UX). Because in 1st approach users might see blank screen or forzen ui till the data is fetched, where as the 2nd approach gives a gist of the website to the user and simultaneously working on the api data and once we have teh data it re-renders the those components where data is used
+4. Making API calls in react (21:00) - useEffect Hook -> This takes 2 arguements 1st is an arrow function or a callback function and 2nd is a dependency array. 
+5. The callback function inside useEffect hook will be called AFTER the component renders.
+6. Fetch API (30:40) is provided by browsers which helps us to get data from APIs. The fetch API returns a promise, which when resolved returns the data from the API.
+7. CORS - (34:00) - 
+8. 45:00 - Optional Chaining
+9. Shimmer UI - (54:00)
+10. Why do we need to use the useState hook instead of regular JS variable - Because useState hooks enable react to keep track of the changes to the variable. So if the variable value is changed, react will re-render the component where it is used
+11. 56:00 - useEffect hook - optional chaining
+12. 1:53:00 - Whenever state variable changes - react re-render the components which contains the state variable - or triggers a reconciliation cycle
+13. The entire component where the input field is there will be re-render on any changes to the value of the input field

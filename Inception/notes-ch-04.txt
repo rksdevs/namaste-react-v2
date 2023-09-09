@@ -1,0 +1,6 @@
+props: Props are nothing but arguements which are passed into the functional components
+whenever we want to change contents of a component dynamically, we can pass the data as a prop
+config-driven-ui: UIs which are made as per the data, difference in data or configs leads to different UI. Such UIs are called config driven UI
+A react developer needs to good at both the UI layer and the data layer
+key: Keys in react helps to uniquely identify components in the same level of the dom, which helps react to render/re-render components when a change occur to a specific uniquely identified component, rather than rendering the entire level of the component again
+index as key: index as key in react should be avoided, because key in react are expected to not only be unique but also stable. Index where as might change when the order of the components are changed, like during removing or adding components in between. This might lead React to remove and re-render components negatively impacting the performance
